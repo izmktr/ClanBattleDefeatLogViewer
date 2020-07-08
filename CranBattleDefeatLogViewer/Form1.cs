@@ -127,22 +127,24 @@ namespace CranBattleDefeatLogViewer
             //ドロップされたすべてのファイル名を取得する
             string[] fileName =
                 (string[])e.Data.GetData(DataFormats.FileDrop, false);
-            //ListBoxに追加する
 
             if (0 < fileName.Length)
             {
                 List<DateTime> d = new List<DateTime>();
                 using (var sm = new StreamReader(fileName[0]))
                 {
-                    var line = sm.ReadLine();
-                    try
+                    while (0 <= sm.Peek())
                     {
-                        var date = DateTime.Parse(line);
-                        d.Add(date);
-                    }
-                    catch (FormatException)
-                    {
+                        var line = sm.ReadLine();
+                        try
+                        {
+                            var date = DateTime.Parse(line);
+                            d.Add(date);
+                        }
+                        catch (FormatException)
+                        {
 
+                        }
                     }
                 }
 
@@ -151,6 +153,7 @@ namespace CranBattleDefeatLogViewer
                     datelist = d;
                     var last = datelist.Last();
                     datelist.Add(new DateTime(last.Year, last.Month, last.Day, last.Hour < 5 ? 4 : 23, 59, 0));
+                    this.Refresh();
                 }
             }
         }
