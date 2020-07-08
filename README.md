@@ -4,7 +4,7 @@
 クランバトルでのバトルログを視覚化するツールです  
 以下のようなログを出力できます
 
-![timeline](https://github.com/izmktr/CranBattleDefeatLogViewer/image/timeline.png)
+![timeline](https://github.com/izmktr/CranBattleDefeatLogViewer/blob/master/image/timeline.png?raw=true)
 
 
 用意する戦闘ログは以下のようになります
