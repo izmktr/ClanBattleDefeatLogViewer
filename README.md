@@ -1,6 +1,5 @@
 # CranBattleDefeatLogViewer
 
-
 クランバトルでのバトルログを視覚化するツールです。  
 以下のようなログを出力できます。  
 
@@ -9,6 +8,10 @@
 どのボスが出現しているか、を表す図です。  
 青い部分なら1ボスが出現しています。  
 
+## ダウンロード
+
+[こちら](https://github.com/izmktr/CranBattleDefeatLogViewer/raw/master/Execute/CranBattleDefeatLogViewer.zip) よりダウンロードしてください。
+サンプル用の戦闘データも入っています。
 
 ## 使い方
 
@@ -23,6 +26,6 @@
 
 1行目から1ボスを倒した時刻、2ボスを倒した時刻、というのを書きます。  
 
-ユカリさんbotを使っている場合、凸報告で「defeatlog」で生成されます。  
+[ユカリさんbot](https://note.com/izmktr/n/n5de070a975c7)を使っている場合、凸報告で「defeatlog」で生成されます。  
 
 
