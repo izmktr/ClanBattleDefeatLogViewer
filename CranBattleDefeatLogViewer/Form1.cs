@@ -304,7 +304,12 @@ namespace CranBattleDefeatLogViewer
             var starttime = prevtime;
             Font fnt = new Font("MS UI Gothic", 12);
 
-            const int attackheight = 30;
+            const int graphheight = 300;
+
+            IEnumerable<List<PointF>> pointrawlists = AttackSpeedList(datelist);
+            int max = (int)(Math.Ceiling (pointrawlists.Max(n => n.Select(m => m.Y).Max())));
+
+            int attackheight = 0 < max ? graphheight / max : 30;
 
             var dispday = start;
             for (int i = 0; i < 5; i++)
@@ -318,26 +323,26 @@ namespace CranBattleDefeatLogViewer
             for (int i = 0; i < 25; i++)
             {
                 int x = ox + i * 30;
-                g.DrawLine(Pens.White, x, 32, x, 32 + 300);
+                g.DrawLine(Pens.White, x, 32, x, 32 + 32 + graphheight);
 
                 g.DrawString(((i + 5) % 24).ToString(), fnt, Brushes.Black, x, 32);
             }
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < max + 1; i++)
             {
                 int ly = y + i * attackheight + 16;
                 g.DrawLine(Pens.White, 0, ly, 25 * 30 + 32, ly);
 
-                g.DrawString(((9 - i)).ToString(), fnt, Brushes.Black, 4, ly - 16);
+                g.DrawString(((max - i)).ToString(), fnt, Brushes.Black, 4, ly - 16);
 
             }
 
             var day = 0;
-            foreach (var pointrawlist in AttackSpeedList(datelist))
+            foreach (var pointrawlist in pointrawlists)
             {
                 using (var pen = new Pen(colors[day], 2))
                 {
-                    var drawline = pointrawlist.Select(n => new Point((int) (ox + n.X), (int)( y + 16 + (9 - n.Y) * attackheight))).ToArray();
+                    var drawline = pointrawlist.Select(n => new Point((int) (ox + n.X), (int)( y + 16 + graphheight - n.Y * attackheight))).ToArray();
                     g.DrawLines(pen, drawline);
                 }
 

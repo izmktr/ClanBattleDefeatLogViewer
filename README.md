@@ -12,7 +12,7 @@
 
 凸推移です。  
 
-![attackspeed](https://github.com/izmktr/CranBattleDefeatLogViewer/blob/master/image/attack.png?raw=true)
+![attackspeed](https://github.com/izmktr/CranBattleDefeatLogViewer/blob/master/image/attackspeed.png?raw=true)
 
 凸時速です。  
 10時なら、9時半～10時半の凸の差分となっています。  
