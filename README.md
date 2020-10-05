@@ -15,8 +15,9 @@
 ![attackspeed](https://github.com/izmktr/CranBattleDefeatLogViewer/blob/master/image/attackspeed.png?raw=true)
 
 凸時速です。  
+前後30分の差分です。  
 10時なら、9時半～10時半の凸の差分となっています。  
-(9:00が3凸、9:40分が4凸の場合、9:30は3.75凸と計算しています。)  
+(9:00が3凸、9:40が4凸の場合、9:30は3.75凸と計算しています。)  
 
 ## ダウンロード
 
