@@ -309,7 +309,9 @@ namespace CranBattleDefeatLogViewer
             IEnumerable<List<PointF>> pointrawlists = AttackSpeedList(datelist);
             int max = (int)(Math.Ceiling (pointrawlists.Max(n => n.Select(m => m.Y).Max())));
 
-            int attackheight = 0 < max ? graphheight / max : 30;
+//            int attackheight = 0 < max ? graphheight / max : 30;
+
+            int maxheight = Math.Max(10, max);
 
             var dispday = start;
             for (int i = 0; i < 5; i++)
@@ -330,7 +332,7 @@ namespace CranBattleDefeatLogViewer
 
             for (int i = 0; i < max + 1; i++)
             {
-                int ly = y + i * attackheight + 16;
+                int ly = y + (i * 300) / maxheight  + 16;
                 g.DrawLine(Pens.White, 0, ly, 25 * 30 + 32, ly);
 
                 g.DrawString(((max - i)).ToString(), fnt, Brushes.Black, 4, ly - 16);
@@ -342,7 +344,7 @@ namespace CranBattleDefeatLogViewer
             {
                 using (var pen = new Pen(colors[day], 2))
                 {
-                    var drawline = pointrawlist.Select(n => new Point((int) (ox + n.X), (int)( y + 16 + graphheight - n.Y * attackheight))).ToArray();
+                    var drawline = pointrawlist.Select(n => new Point((int) (ox + n.X), (int)( y + 16 + graphheight - n.Y * 300 / maxheight))).ToArray();
                     g.DrawLines(pen, drawline);
                 }
 
