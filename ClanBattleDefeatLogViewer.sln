@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CranBattleDefeatLogViewer", "CranBattleDefeatLogViewer\CranBattleDefeatLogViewer.csproj", "{56480A0F-7C75-433B-8CD7-0A08FC6761C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanBattleDefeatLogViewer", "ClanBattleDefeatLogViewer\ClanBattleDefeatLogViewer.csproj", "{56480A0F-7C75-433B-8CD7-0A08FC6761C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

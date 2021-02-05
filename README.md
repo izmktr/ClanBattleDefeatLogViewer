@@ -1,18 +1,18 @@
-# CranBattleDefeatLogViewer
+# ClanBattleDefeatLogViewer
 
 クランバトルでのバトルログを視覚化するツールです。  
 ログを元にグラフを出力します。  
 
-![timeline](https://github.com/izmktr/CranBattleDefeatLogViewer/blob/master/image/timeline.png?raw=true)
+![timeline](https://github.com/izmktr/ClanBattleDefeatLogViewer/blob/master/image/timeline.png?raw=true)
 
 どのボスが出現しているか、を表す図です。  
 青い部分なら1ボスが出現しています。  
 
-![attack](https://github.com/izmktr/CranBattleDefeatLogViewer/blob/master/image/attack.png?raw=true)
+![attack](https://github.com/izmktr/ClanBattleDefeatLogViewer/blob/master/image/attack.png?raw=true)
 
 凸推移です。  
 
-![attackspeed](https://github.com/izmktr/CranBattleDefeatLogViewer/blob/master/image/attackspeed.png?raw=true)
+![attackspeed](https://github.com/izmktr/ClanBattleDefeatLogViewer/blob/master/image/attackspeed.png?raw=true)
 
 凸時速です。  
 前後30分の差分です。  
@@ -21,7 +21,7 @@
 
 ## ダウンロード
 
-[こちら](https://github.com/izmktr/CranBattleDefeatLogViewer/raw/master/Execute/CranBattleDefeatLogViewer.zip) よりダウンロードしてください。
+[こちら](https://github.com/izmktr/ClanBattleDefeatLogViewer/raw/master/Execute/ClanBattleDefeatLogViewer.zip) よりダウンロードしてください。
 サンプル用の戦闘データも入っています。
 
 ## 使い方
