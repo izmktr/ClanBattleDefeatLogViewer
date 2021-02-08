@@ -12,9 +12,9 @@ using System.Windows.Forms.Design;
 
 namespace CranBattleDefeatLogViewer
 {
-    public partial class Form1 : Form
+    public partial class ClanBattleDefeatLogViewer : Form
     {
-        public Form1()
+        public ClanBattleDefeatLogViewer()
         {
             InitializeComponent();
         }

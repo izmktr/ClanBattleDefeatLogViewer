@@ -1,6 +1,6 @@
 ﻿namespace CranBattleDefeatLogViewer
 {
-    partial class Form1
+    partial class ClanBattleDefeatLogViewer
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -95,15 +95,15 @@
             this.tabPage3.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             this.tabPage3.Paint += new System.Windows.Forms.PaintEventHandler(this.tabPage3_Paint);
             // 
-            // Form1
+            // ClanBattleDefeatLogViewer
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ClanBattleDefeatLogViewer";
+            this.Text = "ClanBattleDefeatLogViewer";
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
